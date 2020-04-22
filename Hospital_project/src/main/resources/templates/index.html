@@ -19,11 +19,7 @@
 	 	
 	
 	 	
-	 	<div id="boxboi">
-		<form th:action="@{/logout}" method="post"> 
-			<input type="submit" value="Sign Out" id="button11"/>
-		</form>
-		</div> 
+	 
 	 	
 	 	<div id="boxboi"> 
 	 	<p><a href="/patients" id="button11"> JSON-DATA </a></p>
@@ -32,13 +28,13 @@
 	 	<div id="boxboi"> 
 	 	<p><a href="/signup" id="button11"> Sign up</a></p>
 	 	
-	 	</div>
-	 	<div id="boxboi"> 
-	 	<p><a th:href=@{/logout} id="button"> Logout?</a></p>
+	</div>
 	 	
-	 	</div>
-	 	
-
+	<div id="boxboi">
+		<form th:action="@{/logout}" method="post"> 
+			<input type="submit" value="Sign Out" id="button"/>
+		</form>
+		</div> 
 	 	
 </body>
 </html>
