@@ -7,4 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 	
 	public interface WardRepository extends CrudRepository<Ward, Long> {
 	    List<Ward> findByName(String wardName);
+	    
+	    
 }

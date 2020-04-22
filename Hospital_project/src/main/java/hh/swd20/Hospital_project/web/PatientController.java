@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import hh.swd20.Hospital_project.domain.Patient;
 import hh.swd20.Hospital_project.domain.PatientRepository;
-import hh.swd20.Hospital_project.domain.StaffRepository;
 import hh.swd20.Hospital_project.domain.WardRepository;
 import hh.swd20.Hospital_project.domain.Ward;
 

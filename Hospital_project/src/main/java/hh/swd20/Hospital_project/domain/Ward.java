@@ -11,7 +11,7 @@ public class Ward {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long wardId;
 	private String name; 
-	private String pic_name; // Person In Charge 
+	
 	
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "ward")
 	private List<Patient> patients; 
@@ -22,7 +22,7 @@ public class Ward {
 
 	public Ward () {}
 	
-	public Ward(String name, String pic_name) {
+	public Ward(String name) {
 		super(); 
 		this.name = name; 
 }
@@ -39,16 +39,10 @@ public class Ward {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getPic_name() {
-		return pic_name;
-	}
-	public void setPic_name(String pic_name) {
-		this.pic_name = pic_name;
-	}
 
 	@Override
 	public String toString() {
-		return "Ward [wardId=" + wardId + ", name=" + name + ", pic_name=" + pic_name + "]";
+		return "Ward [wardId=" + wardId + ", name=" + name + "]";
 	}
 	
 }

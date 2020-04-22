@@ -30,10 +30,10 @@ public class HospitalProjectApplication {
 			
 			
 			
-			wrepository.save(new Ward("Hammashoito", "Arska Kesanto")); 
-			wrepository.save(new Ward("Syöpäpotilaat", "Felix 'ketchup' Kilpi")); 
-			wrepository.save(new Ward("Ensihoito", "Riku Rikas")); 
-			wrepository.save(new Ward("Leikkaussali", "Sakke Saksikäsi")); 
+			wrepository.save(new Ward("Hammashoito")); 
+			wrepository.save(new Ward("Syöpäpotilaat")); 
+			wrepository.save(new Ward("Ensihoito")); 
+			wrepository.save(new Ward("Leikkaussali")); 
 			
 			prepository.save(new Patient("Khelester", "Kholera", "Stable", 1, wrepository.findByName("Syöpäpotilaat").get(0)));
 			prepository.save(new Patient("Hamuli", "Popponen", "Oof", 10, wrepository.findByName("Ensihoito").get(0)));

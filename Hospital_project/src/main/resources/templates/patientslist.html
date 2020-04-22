@@ -24,6 +24,7 @@
 		    <th>Patient's status</th>
 		    <th> Treatment's urgency </th>
 		    <th>Ward</th>
+		  
 		   
 		</tr>  
 		
@@ -31,7 +32,8 @@
     		<td th:text="${patient.firstName} + ' ' + ${patient.lastName}"></td>
     		<td th:text="${patient.p_status}"></td>
     		<td id="redtext" th:text="${patient.t_urgency}"> </td>
-    		<td th:text="${patient.ward.name}"></td> 		
+    		<td th:text="${patient.ward.name}"></td> 	
+    		
  			<td sec:authorize="hasAuthority('ADMIN')"><a sec:authorize="hasAuthority('ADMIN')" th:href="@{/deletepatient/{id}(id=${patient.id})}" class="btn btn-danger">Delete</a></td>   
  			<td sec:authorize="hasAuthority('ADMIN')"><a  th:href="@{/editpatient/{id}(id=${patient.id})}" class="btn btn-warning"> Edit </a></td>
  			 		
