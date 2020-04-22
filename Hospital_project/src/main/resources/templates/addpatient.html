@@ -16,16 +16,16 @@
 		<form th:object="${patient}" th:action="@{save}" action="#" method="post">
 
 			<label for="fname">First name</label>
-			<input type="text" id="fname" th:field="*{firstName}" class="form-control"/>
+			<input type="text" id="fname" required="required" th:field="*{firstName}" class="form-control"/>
 			<div style="clear: both; display: block; height: 10px;"></div>
 		  	<label for="lname">Last name</label>
-			<input type="text" id="lname" th:field="*{lastName}" class="form-control"/>
+			<input type="text" required="required" id="lname" th:field="*{lastName}" class="form-control"/>
 			<div style="clear: both; display: block; height: 10px;"></div>
-		  	<label for="email">Patient's status</label>
-			<input type="text" th:field="*{p_status}" class="form-control"/>
+		  	<label for="status">Patient's status</label>
+			<input type="text" required="required" th:field="*{p_status}" class="form-control"/>
 			
 			<label for="email">Treatment's urgency</label>
-			<input type="text" th:field="*{t_urgency}" class="form-control"/>
+			<input type="number" min="1" max="10" th:field="*{t_urgency}" class="form-control"/>
 			
 			
 			
