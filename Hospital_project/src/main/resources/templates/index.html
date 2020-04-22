@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>List of patients</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="../css/CSS.css" th:href="@{../css/CSS.css}" />
+    	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display&display=swap" rel="stylesheet">
+    
+</head>
+<body id="bodybg1">
+	
+	<h1 id="titlemain1"> Welcome to Hospital Project! </h1>
+	 	
+	 	<h3 id="smalltitle"> Would you like to..........</h3>
+	 	
+	 	<div id="boxboi"> 
+	 	<p><a th:href=@{/patientslist} id="buttonpatient"> Check patient data</a></p>
+	 	</div>
+	 	
+	
+	 	
+	 	<div id="boxboi">
+		<form th:action="@{/logout}" method="post"> 
+			<input type="submit" value="Sign Out" id="button11"/>
+		</form>
+		</div> 
+	 	
+	 	<div id="boxboi"> 
+	 	<p><a href="/patients" id="button11"> JSON-DATA </a></p>
+	 	
+	 	</div>
+	 	<div id="boxboi"> 
+	 	<p><a href="/signup" id="button11"> Sign up</a></p>
+	 	
+	 	</div>
+	 	<div id="boxboi"> 
+	 	<p><a th:href=@{/logout} id="button"> Logout?</a></p>
+	 	
+	 	</div>
+	 	
+
+	 	
+</body>
+</html>
