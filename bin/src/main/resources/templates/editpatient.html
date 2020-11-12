@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hospital patient's edit page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="../css/CSS.css" th:href="@{../css/CSS.css}" />
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<h2 id="titlemain">Modify the desired patient's information</h2>
+	<div>
+		<form id="form" th:object="${patient}" th:action="@{../saveedit}" action="#" method="post">
+		  	
+		  	<label for="fname">Patient's first name</label>
+			<input type="text" required="required" id="name" th:field="*{firstName}" />
+			<p th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Name Error</p> 
+			<div style="clear: both; display: block; height: 20px;"></div>
+			
+		  	<label for="lname">Patient's last name</label>
+			<input type="text" required="required" id="author" th:field="*{lastName}" />
+			<p th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Name Error</p>
+			<div style="clear: both; display: block; height: 20px;"></div>
+			
+		  	<label for="p_status">Patient's current status</label>
+			<input type="text" required="required" th:field="*{p_status}" />
+			<p th:if="${#fields.hasErrors('p_status')}" th:errors="*{p_status}">Status Error</p>
+			<div style="clear: both; display: block; height: 20px;"></div>
+			
+			<label for="t_urgency">Treatment's urgency </label>
+			<input type="number" min="1" max="10" th:field="*{t_urgency}" />
+			<p th:if="${#fields.hasErrors('t_urgency')}" th:errors="*{t_urgency}">Treatment Error / Syötä kokonaisluku</p>
+			<div style="clear: both; display: block; height: 20px;"></div>	
+			
+		
+			
+			<label for="id"></label>
+		  	<input type="hidden" id="id" th:field="*{id}" readonly="readonly" /> 
+		  
+			
+			<input id="button" type="submit" value="Save"></input>
+			  <label for="wardlist">Ward:</label>
+			
+			<select id="wardlist" th:field="*{ward}" class="form-control"> 
+			<option th:each="ward: ${wardslist}"
+					th:value="${ward.wardId}"
+					th:text="${ward.name}"></option>
+			</select> 
+			
+			<p><a th:href="@{/patientslist}" id="buttonprevious">Previous page</a></p>
+			
+		</form>
+	</div>
+	
+</body>
+</html>

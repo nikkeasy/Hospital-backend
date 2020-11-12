@@ -1,0 +1,238 @@
+#titlemain {
+	font-size: 45px;
+	font-family: 'Bangers', cursive;
+	margin: auto;
+	border: 3px solid #c0c0c0;
+	text-align: center; 
+	
+}
+
+#titlemain1 {
+	font-size: 45px;
+	font-family: 'Bangers', cursive;
+	margin: auto;
+	border: 3px solid #ff00ff;
+	text-align: center; 
+	background-color: #ff8000; 
+	max-width: 600px; 
+	margin-top: 33px;
+}
+
+#smalltitle {
+	font-size: 30px;
+	font-family: 'cursive;
+	margin: auto;
+	 
+	border: 3px solid #ff00ff;
+	text-align: center; 
+	background-color: #00ff00; 
+	margin-top: 40px;
+	
+	
+}
+
+#logintext { 
+	
+	margin: auto; 
+	font-family:  'Permanent Marker', cursive;
+	padding: 11px; 
+	text-align: center; 
+	background-color:  #808040;
+	border: 3px solid;
+	width: 420px; 
+	margin-top: 50px; 
+}
+	
+#bodybg {
+		background-color:   #ffffe6;
+
+}
+
+#bodybg1 { 
+		
+		background-color: #804040;
+}
+
+#loginimg {
+	
+	
+	background-image: url('https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+	background-repeat: no-repeat;
+ 	background-size: contain;
+  	border: 1px solid red;
+  	width: 4px; 
+  	
+	
+}
+
+#box2 {
+
+  background-color: #ffffff; 
+  max-width: 170px;
+  border: 6px groove #0000ff;
+  padding: 5px;
+  margin: 3px; 
+  margin-right: 20px;
+	
+}
+
+#boxboi {
+
+  background-color: #8080c0; 
+  width: 190px;
+  border: 3px groove;
+  padding: 5px;
+  margin: 13px; 
+  display:inline-grid;
+  flex-wrap: wrap;
+  align-content:center;
+  
+	
+}
+
+#loginbox {
+	
+	background-color:  #ffffff;
+	margin: auto; 
+	text-align: center; 
+	font-family: 'Amatic SC', cursive;
+	border: 5px solid;
+	width: 370px; 
+}
+
+#table {
+	margin: auto;
+	padding: 20px;
+	
+	
+}
+#table td {
+	color: white;
+	background-color: #408080;
+	border: 5px solid #000000;
+  	padding: 12px;
+  	border-radius: 10px;
+  	
+}
+#table td a {
+	color: #ff0080;
+	font-family: Gill Sans, sans-serif;
+	
+}
+#table th {
+	font-family: Gill Sans, sans-serif;
+	font-size: 20px;
+	color: black;
+	padding: 8px;
+	background-color: #00ff00;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	
+	
+}
+#form {
+	color: #804040;
+	background-color: #cae5e6;
+	border: 6px solid #80ff00;
+  	padding: 30px;
+  	border-radius: 10px;
+  	width: 40%;
+  	text-align: left;
+  	margin: auto;
+  	margin-top: 15px;
+  	
+}
+#form label, input {
+	font-family: Gill Sans, sans-serif;
+	padding: 5px;
+	
+}
+
+#button {
+	font-family: Bangers;
+	font-size: 25px;
+	color: #ff80c0;
+	padding: 10px;
+	background-color: #16751b;
+	border: 5px solid #fff;
+	border-radius: 10px;
+	
+}
+
+#buttonprevious {
+	font-family: Gill Sans, sans-serif;
+	font-size: 15px;
+	color: #00ff00;
+	padding: 8px;
+	background-color: #8f6f2d;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+#signout {
+	font-family: Gill Sans, sans-serif;
+	font-size: 15px;
+	color: #fff;
+	padding: 8px;
+	background-color: #d33014;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#welcometext {
+	color: #ff0080;
+	background-color: #808040;
+	border: 3px solid #dd5223;
+  	padding: 12px;
+  	border-radius: 10px;
+  	width: 30%;
+  	text-align: left;
+  	margin-right: auto;
+}
+
+
+
+#button2 {
+	font-family: Gill Sans, sans-serif;
+	font-size: 15px;
+	color: #fff;
+	padding: 8px;
+	background-color: #ff00ff;
+	border: 1px solid #0080ff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+#buttonpatient {
+	font-family: Gill Sans, sans-serif;
+	font-size: 20px;
+	color: #0000ff;
+	padding: 8px;
+	background-color: #ff00ff;
+	border: 1px solid #0080ff;
+	border-radius: 10px;
+	cursor: pointer;
+	
+}
+
+#button11 {
+	font-family: Gill Sans, sans-serif;
+	font-size: 20px;
+	color: #0000ff;
+	padding: 8px;
+	background-color: #ff8040;
+	border: 1px solid #0080ff;
+	border-radius: 10px;
+	cursor: pointer;
+	
+}
+
+
+
+
+
+
+
+

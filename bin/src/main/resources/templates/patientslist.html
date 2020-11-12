@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>List of patients</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <link type="text/css" rel="stylesheet" href="../css/CSS.css" th:href="@{../css/CSS.css}" />
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<div id="smalltitle">
+		<h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]] to Hospital Project!</h3>
+	</div>
+
+	
+	<div id="titlemain1">
+		<h1>Patient data</h1>
+	</div>
+	
+    <table id="table">
+		<tr>
+		
+		    <th>Name</th>
+		    <th>Patient's status</th>
+		    <th> Treatment's urgency </th>
+		    <th>Ward</th>
+		  
+		   
+		</tr>  
+		
+    	<tr th:each = "patient : ${patients}">
+    		<td th:text="${patient.firstName} + ' ' + ${patient.lastName}"></td>
+    		<td th:text="${patient.p_status}"></td>
+    		<td id="redtext" th:text="${patient.t_urgency}"> </td>
+    		<td th:text="${patient.ward.name}"></td> 	
+    		
+ 			<td sec:authorize="hasAuthority('ADMIN')"><a sec:authorize="hasAuthority('ADMIN')" th:href="@{/deletepatient/{id}(id=${patient.id})}" class="btn btn-danger">Delete</a></td>   
+ 			<td sec:authorize="hasAuthority('ADMIN')"><a  th:href="@{/editpatient/{id}(id=${patient.id})}" class="btn btn-warning"> Edit </a></td>
+ 			 		
+    	</tr>
+     </table>
+	 <a sec:authorize="hasAuthority('ADMIN')" href="/add" id="button2"> Add a New Patient</a>    	
+	 
+	 	<a th:href="@{/index}" id="button11"> Back to home page</a>    	
+	 
+	 	<div  style="padding:20px 0">
+		<form th:action="@{/logout}" method="post">
+			<input type="submit" value="Sign Out" id="button"/>
+		</form>
+		</div>
+</body>
+</html>

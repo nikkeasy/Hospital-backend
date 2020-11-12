@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head>
+    <title>Add form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" />
+    
+    
+</head>
+<body>
+	
+	<h1>Add patient </h1>
+	
+		<div class="col-md-4">
+		<form th:object="${patient}" th:action="@{save}" action="#" method="post">
+
+			<label for="fname">First name</label>
+			<input type="text" id="fname" required="required" th:field="*{firstName}" class="form-control"/>
+			<div style="clear: both; display: block; height: 10px;"></div>
+		  	<label for="lname">Last name</label>
+			<input type="text" required="required" id="lname" th:field="*{lastName}" class="form-control"/>
+			<div style="clear: both; display: block; height: 10px;"></div>
+		  	<label for="status">Patient's status</label>
+			<input type="text" required="required" th:field="*{p_status}" class="form-control"/>
+			
+			<label for="email">Treatment's urgency</label>
+			<input type="number" min="1" max="10" th:field="*{t_urgency}" class="form-control"/>
+			
+			
+			
+
+			<div style="clear: both; display: block; height: 10px;"></div>						
+		  	<label for="wardlist">Ward</label>
+			 <select id="wardlist" th:field="*{ward}" class="form-control">
+       			<option th:each="ward: ${wards}" th:value="${ward.wardId}" th:text="${ward.name}"></option>
+    		</select>
+    		
+    	
+	<div style="clear: both; display: block; height: 40px;"></div>
+	<input type="submit" value="Submit" /> <input type="reset" value="Reset" />
+	</form>
+    </div>
+</body>
+</html>
