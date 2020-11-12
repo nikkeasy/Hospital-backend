@@ -1547,3 +1547,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration HospitalProjectAppl
 2020-11-12 11:43:43,579 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-11-12 11:43:43,580 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
 2020-11-12 11:43:43,583 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-11-12 11:43:43,583 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projektit\hospital project\Hospital-backend\Hospital_project\src\test\resources
