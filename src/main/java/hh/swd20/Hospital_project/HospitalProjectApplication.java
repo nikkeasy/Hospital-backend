@@ -35,15 +35,15 @@ public class HospitalProjectApplication {
 			wrepository.save(new Ward("Ensihoito")); 
 			wrepository.save(new Ward("Leikkaussali")); 
 			
-			prepository.save(new Patient("Khelester", "Kholera", "Stable", 1, wrepository.findByName("Syöpäpotilaat").get(0)));
-			prepository.save(new Patient("Hamuli", "Popponen", "Oof", 10, wrepository.findByName("Ensihoito").get(0)));
-			prepository.save(new Patient("Nina", "Kurtti", "ICU", 9, wrepository.findByName("Leikkaussali").get(0)));
-			prepository.save(new Patient("Fätface", "Smallboi", "Stable", 1, wrepository.findByName("Syöpäpotilaat").get(0)));
-			prepository.save(new Patient("Tylsä", "Ihminen", "Oof", 10, wrepository.findByName("Ensihoito").get(0)));
-			prepository.save(new Patient("Nina", "Nillittäjä", "ICU", 9, wrepository.findByName("Syöpäpotilaat").get(0)));
-			prepository.save(new Patient("Chelester", "Smallboi3", "Stable", 1, wrepository.findByName("Ensihoito").get(0)));
-			prepository.save(new Patient("Monkey", "Monkey", "Oof", 10, wrepository.findByName("Ensihoito").get(0)));
-			prepository.save(new Patient("Rafael", "Al-Bashiir", "ICU", 9, wrepository.findByName("Ensihoito").get(0)));
+			prepository.save(new Patient("Potilas 1", "Testi 1", "Vakaa", 1, wrepository.findByName("Syöpäpotilaat").get(0)));
+			prepository.save(new Patient("Potilas 2", "Testi 2", "Leikkaussali", 10, wrepository.findByName("Ensihoito").get(0)));
+			prepository.save(new Patient("Potilas 3", "Testi 3", "ICU", 9, wrepository.findByName("Leikkaussali").get(0)));
+			prepository.save(new Patient("Potilas 4", "Testi 4", "Leikkaussali", 1, wrepository.findByName("Syöpäpotilaat").get(0)));
+			prepository.save(new Patient("Potilas 5", "Testi 5", "Vakaa", 10, wrepository.findByName("Ensihoito").get(0)));
+			prepository.save(new Patient("Potilas 6", "Testi 6", "ICU", 9, wrepository.findByName("Syöpäpotilaat").get(0)));
+			prepository.save(new Patient("Potilas 7", "Testi 7", "Vakaa", 1, wrepository.findByName("Ensihoito").get(0)));
+			prepository.save(new Patient("Potilas 8", "Testi 8", "Vakaa", 10, wrepository.findByName("Ensihoito").get(0)));
+			prepository.save(new Patient("Potilas 9", "Testi 9", "ICU", 9, wrepository.findByName("Ensihoito").get(0)));
 			
 			// Create users 
 			User user1 = new User("user", "$2a$08$4QKKZS26cCW6by3/TR7yM.T0wG/ToijLXHsFsjz6sDJ1ZnkVzyUt.", "USER"); // password2 - Hash generated from:
