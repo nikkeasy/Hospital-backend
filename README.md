@@ -13,3 +13,5 @@ without delay. So if you happen to inspect the site, it could take a while for t
 > Password: password1 
 
 Possible to change existing data in H2 (virtual memory based) database (modify, add and remove data). 
+
+Also possible to add users and view H2-database as JSON-data. 
